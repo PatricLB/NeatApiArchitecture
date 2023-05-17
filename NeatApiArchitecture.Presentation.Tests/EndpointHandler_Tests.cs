@@ -35,7 +35,7 @@ namespace NeatApiArchitecture.Presentation.Tests
 		{
 			//Arrange
 			var count = 10;
-			var dummyPeople = A.CollectionOfDummy<Person>(20);
+			var dummyPeople = A.CollectionOfDummy<Person>(10);
 
 			var fakeRepo = A.Fake<IRepository<Person>>();
 			A.CallTo(() => fakeRepo.GetAllAsync()).Returns(dummyPeople);
